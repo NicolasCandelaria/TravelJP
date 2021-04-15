@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/order.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="https://kit.fontawesome.com/2a539f6e72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a id="top"></a>
+    <div class="theme-wrapper">
+        <header class="header is-flex">
+            <div class="logo-wrap">
+            <a href="index.html" title="homepage">
+                <img src="images/nicolasclogo.png" alt="traveljp logo"> 
+            </div>
+            <h2 class="logo-text">TravelJP</h2>
+            </a>
+            <nav class="gn flex-half">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </header>
+<h2 class="wmargin">TRAVELJP's Secure Checkout Form</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3 class="wmargin">Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nicolas C">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="nicolascandelaria@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="BCIT Campus">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Vancouver">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Province</label>
+                <input type="text" id="state" name="state" placeholder="BC">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="V1M 1V1">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3 class="wmargin">Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Nicolas Candelaria">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1234 5678 9012">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2021">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container-s">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Itinerary 1</a> <span class="price">$120</span></p>
+      <p><a href="#">Itinerary 2</a> <span class="price">$150</span></p>
+      <p><a href="#">Itinerary 3</a> <span class="price">$80</span></p>
+      <p><a href="#">Itinerary 4</a> <span class="price">$200</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$550</b></span></p>
+      <a href="#top" class="back">Back to top</a>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="first-row is-flex">
+            <ul class="left-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+            <div class="mid-space"></div>
+            <ul class="right-list">
+                <li><a href="#">Kyoto</a></li>
+                <li><a href="#">Osaka</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="mid-row is-flex">
+            <ul>
+                <li>
+                    <img class="social-icon" src="images/facebook.svg">
+                </li>
+                <li>
+                    <img class="social-icon" src="images/twitter.svg">
+                </li>
+                <li>
+                    <img class="social-icon" src="images/instagram.svg">
+                </li>
+            </ul>
+        </div>
+        <div class="last-row is-flex">
+            <p>&copy; 2010 — 2021</p>
+            <a href="#">Privacy - Terms</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
